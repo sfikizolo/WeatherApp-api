@@ -68,19 +68,16 @@ h1{
 .app .top{
   width: 100%;
   margin: auto;
+  text-align:center;
 }
 
-.app .des{
-  position: relative;
-  right: -90%;
-  transform-origin: 0 0;
-  transform: rotate(90deg);
-}
+
 
 .app .bottom{
-  display:flex;
+  display:grid;
   justify-content: space-evenly;
   background-color: rgb(255, 255, 255,0.2);
   border-radius: 12px;
+  
 }
 
