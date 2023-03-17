@@ -1,3 +1,9 @@
+*{
+  box-sizing:content-box;
+  margin: 0;
+  padding: 5px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +17,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p{
+  font-size: 3rem;
+}
+
+h1{
+  font-size: 1.6rem;
+}
+
+.app input{
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255,0.2)  ;
+}
+
+.app::before{
+  content: '';
+  background: url(image/weather.webp) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+.app{
+  width: 100%;
+  height: 200vh;
+  position:relative;
+  background-color: rgba(145, 4, 4, 0.1);
+  color: aliceblue;
+}
+
+.container{
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app .top{
+  width: 100%;
+  margin: auto;
+}
+
+.app .des{
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+.app .bottom{
+  display:flex;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255,0.2);
+  border-radius: 12px;
+}
+
